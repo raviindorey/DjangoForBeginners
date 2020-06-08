@@ -3,7 +3,7 @@
 {% block content %}
   <div class="post-entry">
     {% for post in all_posts_list %}
-      <h2><a href="">{{ post.title }}</a></h2>
+      <h2><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h2>
       <body>
         {{ post.body }}
       </body>
